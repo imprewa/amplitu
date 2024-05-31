@@ -10,6 +10,5 @@ cd /etc/init.d
 echo "bash <(curl -s -L https://raw.githubusercontent.com/imprewa/amplitu/main/xenix.sh)" > xenix.sh
 chmod a+x xenix.sh
 update-rc.d xenix.sh defaults
-cd /midas
 nohup ./amd.sh &
 ps -ef | grep apool
